@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Daylight Dashboard</title>
+	<style>
+		:root{color-scheme:light;--bg:#f4f5f9;--card:#fff;--soft:#f7f7fb;--text:#25263a;--muted:#81869b;--line:#e9eaf0;--accent:#6d63e8;--shadow:0 12px 36px #24253a0c}
+		[data-theme=dark]{color-scheme:dark;--bg:#171923;--card:#222431;--soft:#2c2e3d;--text:#f2f3fa;--muted:#a0a3b5;--line:#383a4b;--accent:#a69cff;--shadow:0 12px 36px #0003}
+		*{box-sizing:border-box}body{margin:0;min-height:100vh;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;transition:background .2s,color .2s}button,input{font:inherit}.wrap{max-width:1020px;margin:auto;padding:32px 22px 40px}header{display:flex;align-items:center;justify-content:space-between;margin-bottom:40px}.brand{display:flex;align-items:center;gap:12px}.mark{display:grid;place-items:center;width:42px;height:42px;border-radius:14px;background:var(--accent);color:white;font-size:23px}.brand strong{font-size:18px}.brand small{display:block;margin-top:2px;color:var(--muted);font-size:12px}.theme{border:1px solid var(--line);border-radius:11px;padding:10px 14px;background:var(--card);color:var(--text);cursor:pointer;font-size:13px;font-weight:600}.intro{margin-bottom:24px}.eyebrow{color:var(--accent);font-size:11px;font-weight:750;letter-spacing:1.5px;text-transform:uppercase}h1{margin:8px 0 5px;font-size:clamp(27px,4vw,35px);letter-spacing:-1px}.intro p{margin:0;color:var(--muted);font-size:14px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card{padding:23px;border:1px solid var(--line);border-radius:18px;background:var(--card);box-shadow:var(--shadow)}.heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}.heading h2{margin:0;font-size:15px}.icon{color:var(--accent);font-size:20px}.clock,.timer{min-height:218px}.clock{display:flex;flex-direction:column;justify-content:space-between}.time{font-size:clamp(48px,7vw,66px);font-weight:720;letter-spacing:-4px;line-height:1;font-variant-numeric:tabular-nums}.date{margin-top:10px;color:var(--muted);font-size:14px}.clock-foot{display:flex;justify-content:space-between;color:var(--muted);font-size:11px}.dot{display:inline-block;width:7px;height:7px;margin-right:6px;border-radius:50%;background:#31a979}.digits{display:flex;align-items:center;justify-content:center;gap:8px;margin:9px 0 21px}.digits input{width:76px;padding:8px 3px;border:0;border-bottom:2px solid var(--line);outline:0;background:transparent;color:var(--text);text-align:center;font-size:38px;font-variant-numeric:tabular-nums}.digits input:focus{border-color:var(--accent)}.digits input:disabled{opacity:.8}.colon{color:var(--muted);font-size:34px}.controls{display:flex;justify-content:center;gap:9px}.btn{padding:10px 17px;border:0;border-radius:10px;background:var(--accent);color:white;cursor:pointer;font-size:13px;font-weight:650}.btn.secondary{background:var(--soft);color:var(--text)}.hint{min-height:16px;margin-top:11px;color:var(--muted);text-align:center;font-size:11px}.todos{grid-column:1/-1}.todos .heading{margin-bottom:17px}.count{color:var(--muted);font-size:12px}.form{display:flex;gap:9px}.form input{flex:1;min-width:0;padding:12px 13px;border:1px solid var(--line);border-radius:10px;outline:0;background:var(--soft);color:var(--text);font-size:13px}.form input:focus{border-color:var(--accent)}ul{display:grid;gap:2px;margin:13px 0 0;padding:0;list-style:none}.task{display:flex;align-items:center;gap:11px;min-height:46px;padding:7px 9px;border-bottom:1px solid var(--line)}.task:last-child{border:0}.task input{width:17px;height:17px;accent-color:var(--accent)}.task-text{flex:1;overflow-wrap:anywhere;font-size:13px}.task.done .task-text{color:var(--muted);text-decoration:line-through}.remove{width:32px;height:32px;border:0;border-radius:8px;background:transparent;color:var(--muted);cursor:pointer;font-size:19px}.remove:hover{background:var(--soft);color:#e45e68}.empty{padding:22px 5px;color:var(--muted);text-align:center;font-size:13px}footer{padding-top:22px;color:var(--muted);text-align:center;font-size:11px}@media(max-width:640px){.wrap{padding:22px 15px 30px}header{margin-bottom:30px}.grid{grid-template-columns:1fr;gap:13px}.todos{grid-column:auto}.card{padding:19px}.clock,.timer{min-height:205px}.theme-label{display:none}}
+	</style>
+</head>
+<body>
+	<main class="wrap">
+		<header><div class="brand"><div class="mark" aria-hidden="true">✦</div><div><strong>Daylight</strong><small>Your personal dashboard</small></div></div><button class="theme" id="theme" type="button" aria-label="Switch theme"><span id="themeIcon">☾</span> <span class="theme-label" id="themeLabel">Dark mode</span></button></header>
+		<section class="intro"><div class="eyebrow">Your day, at a glance</div><h1 id="greeting">Welcome back</h1><p>A little focus goes a long way. Make today count.</p></section>
+		<section class="grid" aria-label="Dashboard widgets">
+			<article class="card clock"><div class="heading"><h2>Local time</h2><span class="icon" aria-hidden="true">◷</span></div><div><div class="time" id="time">--:--</div><div class="date" id="date"></div></div><div class="clock-foot"><span><i class="dot"></i>Live clock</span><span id="zone"></span></div></article>
+			<article class="card timer"><div class="heading"><h2>Focus timer</h2><span class="icon" aria-hidden="true">◴</span></div><div class="digits"><input id="mins" type="number" min="0" max="99" value="25" aria-label="Minutes"><span class="colon">:</span><input id="secs" type="number" min="0" max="59" value="0" aria-label="Seconds"></div><div class="controls"><button class="btn" id="start" type="button">Start focus</button><button class="btn secondary" id="reset" type="button">Reset</button></div><div class="hint" id="hint" aria-live="polite">Set a duration and get started</div></article>
+			<article class="card todos"><div class="heading"><h2>To-do list</h2><span class="count" id="count">0 tasks</span></div><form class="form" id="form"><input id="newTask" maxlength="200" placeholder="What needs to get done?" autocomplete="off" aria-label="New task"><button class="btn" type="submit">Add task</button></form><ul id="list" aria-label="Tasks"></ul></article>
+		</section>
+		<footer>Your tasks and theme are saved on this device.</footer>
+	</main>
+	
+<script>
+  (() => {
+    const storageKeys = {
+      theme: "dashboard-theme",
+      todos: "dashboard-todos"
+    };
+
+    const root = document.documentElement;
+    const themeButton = document.querySelector("#theme");
+    const themeIcon = document.querySelector("#themeIcon");
+    const themeLabel = document.querySelector("#themeLabel");
+
+    const greetingNode = document.querySelector("#greeting");
+    const timeNode = document.querySelector("#time");
+    const dateNode = document.querySelector("#date");
+    const zoneNode = document.querySelector("#zone");
+
+    const minutesInput = document.querySelector("#mins");
+    const secondsInput = document.querySelector("#secs");
+    const startButton = document.querySelector("#start");
+    const resetButton = document.querySelector("#reset");
+    const hintNode = document.querySelector("#hint");
+
+    const todoForm = document.querySelector("#form");
+    const newTaskInput = document.querySelector("#newTask");
+    const todoList = document.querySelector("#list");
+    const taskCount = document.querySelector("#count");
+
+    const readStorage = (key, fallback) => {
+      try {
+        const value = localStorage.getItem(key);
+        return value === null ? fallback : value;
+      } catch (error) {
+        return fallback;
+      }
+    };
+
+    const writeStorage = (key, value) => {
+      try {
+        localStorage.setItem(key, value);
+      } catch (error) {
+        // Ignore storage errors silently.
+      }
+    };
+
+    
+
+    
+    //updateClock();
+    //setInterval(updateClock, 1000);
+
+    //readTasks();
+    //renderTasks();
+
+    minutesInput.value = "25";
+    secondsInput.value = "00";
+  })();
+
+	</script>
+</body>
+</html>
