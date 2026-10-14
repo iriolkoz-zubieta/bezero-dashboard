@@ -1,6 +1,6 @@
 ## Ariketa: Eman funtzionaltasuna Daylight dashboardari
 
-Abiapuntuko fitxategian interfaze grafikoa eta osagai nagusiak prest daude: erlojua, focus timerra, todo zerrenda eta gai iluna/argia aldatzeko botoia. Zure lana da JavaScript erabiliz osagai horiei funtzionaltasuna ematea, diseinua aldatu gabe.
+Abiapuntuko fitxategian interfaze grafikoa eta osagai nagusiak prest daude: erlojua, focus timerra, todo zerrenda eta gai iluna/argia aldatzeko botoia. Zure lana da JavaScript erabiliz osagai horiei f[...] 
 
 Erabili `index.html` fitxategia abiapuntu gisa. JavaScriptaren barruan `localStorage` erabiltzeko laguntza-funtzioak eta gako-izenak aurkituko dituzu.
 
@@ -39,3 +39,8 @@ Erabili `index.html` fitxategia abiapuntu gisa. JavaScriptaren barruan `localSto
 - Mantendu kodea irakurgarria: banatu erlojuaren, timeraren, atazen eta gaiaren logika funtzio argietan.
 
 **Amaierako emaitza:** dashboarda bisualki berdina izango da, baina osagai guztiek behar bezala funtzionatuko dute; atazak eta hautatutako gaia nabigatzailearen `localStorage`-n gordeko dira.
+
+---
+
+## Erreferentziak
+- [erreferentziak.md](erreferentziak.md) — Dashboard ariketarako web-erreferentziak (erlojua, timerra, todo eta gaien aldaketa).
