@@ -1,6 +1,6 @@
 # Erreferentziak — Daylight dashboard ariketa
 
-Hona hemen dashboard osagaiak (erlojua, focus timer, todo zerrenda, eta gaien (theme) aldaketa) inplementatzeko erabilgarriak diren web-erreferentziak eta tutorialak, JavaScript eta Web API estandarretan oinarrituta.
+Dashboard osagaiak (erlojua, focus timer, todo zerrenda, eta gaien (theme) aldaketa) inplementatzeko erabilgarriak diren web-erreferentziak eta tutorialak, JavaScript eta Web API estandarretan oinarrituta.
 
 ## 1. JavaScript oinarrizkoak eta DOM
 - MDN: Introduction to JavaScript
@@ -74,8 +74,4 @@ Hona hemen dashboard osagaiak (erlojua, focus timer, todo zerrenda, eta gaien (t
 - W3Schools: JavaScript timing events
   https://www.w3schools.com/js/js_timing.asp
 
----
 
-Oharrak:
-- Erreferentzia hauek MDN eta beste tutorial ezagunetatik datoz, eta azkar exekutatzeko eta ulertzeko baliagarriak izango dira ariketa egiteko.
-- Nahi baduzu, hau probazko kode-egitura baten edo direktuki index.html-ri lotutako JavaScript hasierako fitxategi baten formatuan sor dezaket.
