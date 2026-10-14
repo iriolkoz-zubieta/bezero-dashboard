@@ -39,8 +39,8 @@ Dashboard osagaiak (erlojua, focus timer, todo zerrenda, eta gaien (theme) aldak
 ## 6. To-do zerrenda eta persistentzia
 - MDN: Example of localStorage-based tasks/todo list
   https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
-- freeCodeCamp: How to build a todo app with JavaScript
-  https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-javascript/
+- freeCodeCamp: Learn crud in javascript by building todo app
+  https://www.freecodecamp.org/news/learn-crud-operations-in-javascript-by-building-todo-app/
 - YouTube tutorial bila (javascript todo list localstorage)
   https://www.youtube.com/results?search_query=javascript+todo+list+localstorage
 
