@@ -9,7 +9,7 @@ Erabili `index.html` fitxategia abiapuntu gisa. JavaScriptaren barruan `localSto
 1. **Erlojua**
    - Uneko ordua etengabe erakutsi, segundo bakoitzean eguneratuta.
    - Data eta ordu-eremua ere erakutsi.
-   - Uneko orduaren arabera, agurraren testua eguneratu.
+   - Uneko orduaren arabera, agurraren testua eguneratu ("Egun on", "Arratsalde on"...)
 
 2. **Focus timerra**
    - Erabiltzaileak minutuak eta segundoak ezarri ahal izan behar ditu.
@@ -25,7 +25,7 @@ Erabili `index.html` fitxategia abiapuntu gisa. JavaScriptaren barruan `localSto
    - Erakutsi zenbat ataza dauden.
    - Atazen egoera eta zerrenda `localStorage`-n gorde, orria berriro irekitzean lehengo egoera berreskuratzeko.
 
-4. **Gai aldaketa**
+4. **Gai (theme) aldaketa**
    - Botoiak gai argiaren eta ilunaren artean txandakatu behar du.
    - Hautatutako gaia `localStorage`-n gorde eta orria berriro irekitzean aplikatu.
    - Botoiaren ikonoak eta testuak uneko gaia adierazi behar dute.
