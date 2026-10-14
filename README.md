@@ -43,4 +43,4 @@ Erabili `index.html` fitxategia abiapuntu gisa. JavaScriptaren barruan `localSto
 ---
 
 ## Erreferentziak
-- [erreferentziak.md](erreferentziak.md) — Dashboard ariketarako web-erreferentziak (erlojua, timerra, todo eta gaien aldaketa).
+- [ERREFERENTZIAK.md](ERREFERENTZIAK.md) — Dashboard ariketarako web-erreferentziak (erlojua, timerra, todo eta gaien aldaketa).
