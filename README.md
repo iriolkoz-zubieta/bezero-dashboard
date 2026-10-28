@@ -1,6 +1,6 @@
 ## Ariketa: Eman funtzionaltasuna Daylight dashboardari
 
-Abiapuntuko fitxategian interfaze grafikoa eta osagai nagusiak prest daude: erlojua, focus timerra, todo zerrenda eta gai iluna/argia aldatzeko botoia. Zure lana da JavaScript erabiliz osagai horiei funtzionaltasuna ematea, diseinua aldatu gabe.
+Abiapuntuko fitxategian interfaze grafikoa eta osagai nagusiak prest daude: erlojua, focus timerra, todo zerrenda eta gai iluna/argia aldatzeko botoia. Zure lana da JavaScript erabiliz osagai horiei f[...] 
 
 Erabili `index.html` fitxategia abiapuntu gisa. JavaScriptaren barruan `localStorage` erabiltzeko laguntza-funtzioak eta gako-izenak aurkituko dituzu.
 
@@ -9,7 +9,7 @@ Erabili `index.html` fitxategia abiapuntu gisa. JavaScriptaren barruan `localSto
 1. **Erlojua**
    - Uneko ordua etengabe erakutsi, segundo bakoitzean eguneratuta.
    - Data eta ordu-eremua ere erakutsi.
-   - Uneko orduaren arabera, agurraren testua eguneratu.
+   - Uneko orduaren arabera, agurraren testua eguneratu ("Egun on", "Arratsalde on"...)
 
 2. **Focus timerra**
    - Erabiltzaileak minutuak eta segundoak ezarri ahal izan behar ditu.
@@ -25,7 +25,7 @@ Erabili `index.html` fitxategia abiapuntu gisa. JavaScriptaren barruan `localSto
    - Erakutsi zenbat ataza dauden.
    - Atazen egoera eta zerrenda `localStorage`-n gorde, orria berriro irekitzean lehengo egoera berreskuratzeko.
 
-4. **Gai aldaketa**
+4. **Gai (theme) aldaketa**
    - Botoiak gai argiaren eta ilunaren artean txandakatu behar du.
    - Hautatutako gaia `localStorage`-n gorde eta orria berriro irekitzean aplikatu.
    - Botoiaren ikonoak eta testuak uneko gaia adierazi behar dute.
@@ -39,3 +39,8 @@ Erabili `index.html` fitxategia abiapuntu gisa. JavaScriptaren barruan `localSto
 - Mantendu kodea irakurgarria: banatu erlojuaren, timeraren, atazen eta gaiaren logika funtzio argietan.
 
 **Amaierako emaitza:** dashboarda bisualki berdina izango da, baina osagai guztiek behar bezala funtzionatuko dute; atazak eta hautatutako gaia nabigatzailearen `localStorage`-n gordeko dira.
+
+---
+
+## Erreferentziak
+- [ERREFERENTZIAK.md](ERREFERENTZIAK.md) — Dashboard ariketarako web-erreferentziak (erlojua, timerra, todo eta gaien aldaketa).
