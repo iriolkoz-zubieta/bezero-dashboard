@@ -67,6 +67,15 @@
       }
     };
 
+    themeButton.addEventListener("click", () => {
+      const currentTheme = root.getAttribute("data-theme");
+      const newTheme = currentTheme === "dark" ? "light" : "dark";
+      root.setAttribute("data-theme", newTheme);
+      writeStorage(storageKeys.theme, newTheme);
+      themeIcon.textContent = newTheme === "dark" ? "☀" : "☾";
+      themeLabel.textContent = newTheme === "dark" ? "Light mode" : "Dark mode";
+    });
+
     
 
     
